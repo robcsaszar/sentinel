@@ -1,0 +1,19 @@
+{
+  "name": "robcsaszar-sentinel",
+  "version": "0.5.0",
+  "description": "Static security audit skill for web application codebases: stack triage, checklist-driven scan, and a PASS/FAIL/MANUAL-REVIEW report with file:line evidence and remediation code.",
+  "author": {
+    "name": "Rob Csaszar",
+    "url": "https://nhg.design"
+  },
+  "repository": "https://github.com/robcsaszar/sentinel",
+  "license": "MIT",
+  "keywords": [
+    "security-audit",
+    "vulnerability-scan",
+    "owasp",
+    "static-analysis",
+    "claude-code",
+    "code-review"
+  ]
+}
