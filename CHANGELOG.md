@@ -6,7 +6,7 @@ All notable changes to this project are documented here. Format follows [Keep a 
 
 ### Fixed
 
-- Frontmatter `description` was an unquoted YAML plain scalar containing `": "` sequences (`Use when: …`, `Keywords are …`), which is a mapping-value parse error. The value is now single-quoted, so the frontmatter parses.
+- Frontmatter `description` was an unquoted YAML plain scalar containing `": "` sequences (`Use when: …`, `Keywords are …`), which is a mapping-value parse error. The colons are now removed entirely rather than escaped, so the value parses quoted or unquoted and conforms to the house no-colons rule.
 
 ### Changed
 
