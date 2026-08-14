@@ -1,6 +1,6 @@
 ---
 name: sentinel
-description: Perform a rigorous static security audit of a web application codebase. Produces a summary table (PASS / FAIL / MANUAL-REVIEW) and per-finding blocks with file:line evidence, risk description, and remediation code. Use when: security audit, security review, check for vulnerabilities, audit the app, scanning before a release or pen-test engagement. Keywords are "vulnerability scan", "OWASP", "XSS", "SQLi", "CSP", "auth issues", "CVE review", "pen-test prep". Not for general code review or style/architecture feedback — this skill is security-specific.
+description: 'Perform a rigorous static security audit of a web application codebase. Produces a summary table (PASS / FAIL / MANUAL-REVIEW) and per-finding blocks with file:line evidence, risk description, and remediation code. Use when: security audit, security review, check for vulnerabilities, audit the app, scanning before a release or pen-test engagement. Covers XSS, SQLi, CSP, authn/authz, secrets, and dependency CVEs. Not for general code review or style/architecture feedback — this skill is security-specific.'
 disable-model-invocation: true
 ---
 
