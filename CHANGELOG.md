@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented here. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning follows [SemVer](https://semver.org/).
 
+## [0.7.1] - 2026-08-15
+
+### Fixed
+
+- C5 (password hashing) listed only bcrypt, scrypt, and argon2, so PBKDF2 read as a finding even where the runtime leaves no alternative. It is now accepted where the platform forces it.
+- Added a C5 platform-ceiling note for Cloudflare Workers and Pages, gated on the Phase 1 deploy target. OWASP recommends 210,000 PBKDF2-HMAC-SHA256 iterations; as of 2026-08-15 Cloudflare caps client-supplied iterations at 100,000 and the cap is not configurable, so a request for 210,000 fails rather than downgrading. Without this, an audit files a FAIL whose only remedy is leaving the platform. The note carries verdicts for each case — including that below 100,000 is still a FAIL, since the ceiling explains 100,000 and not 40,000 — directs the auditor to re-check whether the cap still stands before writing it up, and requires saying the figure is unverified rather than asserting it when the check is not possible.
+- Phase 1's deploy-target question now notes that the target also sets crypto ceilings, so the platform notes actually fire.
+
 ## [0.7.0] - 2026-08-15
 
 Upstreamed from working use of the skill in a real codebase.

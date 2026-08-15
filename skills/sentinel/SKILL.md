@@ -19,7 +19,7 @@ Before scanning any code, answer these questions by reading `package.json`, conf
 1. **Framework**: SvelteKit / Next.js / Express / FastAPI / etc.
 2. **Database driver**: parameterized (libsql, pg, prisma) vs. raw string (low-level drivers)
 3. **Auth mechanism**: JWT / HMAC tokens / sessions / OAuth
-4. **Deploy target**: Fly.io / Cloudflare / Vercel / bare Node — determines which IP header to trust for rate-limiting and audit logs (`Fly-Client-IP` vs `CF-Connecting-IP` vs `X-Forwarded-For`); trusting the wrong one lets an attacker spoof their source IP
+4. **Deploy target**: Fly.io / Cloudflare / Vercel / bare Node — determines which IP header to trust for rate-limiting and audit logs (`Fly-Client-IP` vs `CF-Connecting-IP` vs `X-Forwarded-For`); trusting the wrong one lets an attacker spoof their source IP. It also sets the crypto ceilings a codebase cannot exceed, so record it precisely enough to apply the platform notes in the checklist
 5. **File uploads**: yes/no — if yes, where stored (local FS, S3-compatible, CDN)
 6. **External outbound calls**: email API, webhooks, media fetch — potential SSRF surfaces
 7. **Verification command**: the project's own definition of done (type-check, build, tests) — Phase 5 runs this after every fix
