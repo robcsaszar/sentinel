@@ -9,7 +9,7 @@
       "name": "robcsaszar-sentinel",
       "source": "./",
       "description": "Static security audit skill for web application codebases: stack triage, checklist-driven scan, and a PASS/FAIL/MANUAL-REVIEW report with file:line evidence and remediation code.",
-      "version": "0.5.0"
+      "version": "0.7.1"
     }
   ]
 }
