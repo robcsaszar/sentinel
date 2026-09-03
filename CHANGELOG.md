@@ -48,4 +48,7 @@ Upstreamed from working use of the skill in a real codebase.
 
 - Initial release: sentinel skill.
 
+[0.7.1]: https://github.com/robcsaszar/sentinel/releases/tag/v0.7.1
+[0.7.0]: https://github.com/robcsaszar/sentinel/releases/tag/v0.7.0
+[0.6.0]: https://github.com/robcsaszar/sentinel/releases/tag/v0.6.0
 [0.5.0]: https://github.com/robcsaszar/sentinel/releases/tag/v0.5.0
